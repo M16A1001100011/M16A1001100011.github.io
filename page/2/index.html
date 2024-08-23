@@ -142,6 +142,86 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-algorithms-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/08/17/algorithms-1/">冒泡排序</a>
+    </h1>
+  
+
+        
+        <a href="/2024/08/17/algorithms-1/" class="archive-article-date">
+  	<time datetime="2024-08-17T07:43:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>学习了冒泡排序算法，并尝试使用python实现算法<br>参考了github上的开源代码：<a target="_blank" rel="noopener" href="https://github.com/Vay-keen/Seven-sorting-methods/blob/master/bubble_sort.py">冒泡排序</a>，<del>通过阅读和复现，发现了两个错误</del>：</p>
+<ul>
+<li>参考程序中，直接将self.array赋值给array，故之后的操作也会对原列表产生影响</li>
+<li>在实现第三个方法时，swap_index等于i，不能正确实现排序，需赋值为i+1，因为i+1才是最后进行交换的位置</li>
+</ul>
+<p>改正后的程序如下所示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现冒泡排序的三种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Bubblesort</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line">  </span><br><span class="line">    <span class="comment"># 常规方法   </span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">bubble1</span>(<span class="params">self</span>):</span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        n = <span class="built_in">len</span>(array)</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n)[:-<span class="number">1</span>-j]:</span><br><span class="line">                <span class="keyword">if</span> array[i] &gt; array[i+<span class="number">1</span>]:</span><br><span class="line">                    tmp = array[i+<span class="number">1</span>]</span><br><span class="line">                    array[i+<span class="number">1</span>] = array[i]</span><br><span class="line">                    array[i] =  tmp</span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line">  </span><br><span class="line">    <span class="comment"># 通过标记是否有交换操作，实现程序提前结束循环</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">bubble2</span>(<span class="params">self</span>):</span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        n = <span class="built_in">len</span>(array)</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            swap_flag = <span class="literal">True</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n)[:-<span class="number">1</span>-j]:</span><br><span class="line">                <span class="keyword">if</span> array[i] &gt; array[i+<span class="number">1</span>]:</span><br><span class="line">                    tmp = array[i+<span class="number">1</span>]</span><br><span class="line">                    array[i+<span class="number">1</span>] = array[i]</span><br><span class="line">                    array[i] =  tmp</span><br><span class="line">                    swap_flag = <span class="literal">False</span></span><br><span class="line">            <span class="keyword">if</span> swap_flag==<span class="literal">True</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line">  </span><br><span class="line">    <span class="comment"># 通过标记某次循环中最后一次交换操作的位置，使下一次循环提前结束</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">bubble3</span>(<span class="params">self</span>):</span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        n = <span class="built_in">len</span>(array)</span><br><span class="line">        swap_index = n</span><br><span class="line">        <span class="keyword">while</span> swap_index!=<span class="number">0</span>:</span><br><span class="line">            k = swap_index</span><br><span class="line">            swap_index = <span class="number">0</span></span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n)[:k-<span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">if</span> array[i] &gt; array[i+<span class="number">1</span>]:</span><br><span class="line">                    swap_index = i+<span class="number">1</span></span><br><span class="line">                    tmp = array[i+<span class="number">1</span>]</span><br><span class="line">                    array[i+<span class="number">1</span>] = array[i]</span><br><span class="line">                    array[i] =  tmp</span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    bubble = Bubblesort(testlist)</span><br><span class="line">    sortlist = bubble.bubble1()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br><span class="line">    sortlist = bubble.bubble2()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br><span class="line">    sortlist = bubble.bubble3()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/08/17/algorithms-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-python-note2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

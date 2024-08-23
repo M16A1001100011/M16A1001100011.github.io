@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>2887</title>
+  <title>狄克斯特拉算法 | 2887</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="2887">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="学习了狄克斯特拉算法，并尝试用python实现同样实现了输出地图上每个点到A点的最短距离与之前相比，还实现了输出从起点’A’到终点’G’的途径路径点程序的用例来源于算法动画图解app          我的程序设计如下： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849">
+<meta property="og:type" content="article">
+<meta property="og:title" content="狄克斯特拉算法">
+<meta property="og:url" content="http://example.com/2024/08/23/algorithms-11/index.html">
 <meta property="og:site_name" content="2887">
+<meta property="og:description" content="学习了狄克斯特拉算法，并尝试用python实现同样实现了输出地图上每个点到A点的最短距离与之前相比，还实现了输出从起点’A’到终点’G’的途径路径点程序的用例来源于算法动画图解app          我的程序设计如下： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/2024/08/23/assets/img/Bellman1.jpg">
+<meta property="og:image" content="http://example.com/2024/08/23/assets/img/Bellman2.jpg">
+<meta property="article:published_time" content="2024-08-23T13:34:30.000Z">
+<meta property="article:modified_time" content="2024-08-23T13:57:51.753Z">
 <meta property="article:author" content="Jia Yang">
+<meta property="article:tag" content="我的第一本算法书">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2024/08/23/assets/img/Bellman1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="2887" type="application/atom+xml">
   
@@ -140,16 +148,14 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-algorithms-11" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-algorithms-11" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/23/algorithms-11/">狄克斯特拉算法</a>
+    <h1 class="article-title" itemprop="name">
+      狄克斯特拉算法
     </h1>
   
 
@@ -197,16 +203,75 @@ var _hmt = _hmt || [];
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/23/algorithms-11/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2024/08/23/algorithms-11/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2024/08/22/algorithms-10/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">贝尔曼福特算法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -226,759 +291,14 @@ var _hmt = _hmt || [];
 
 
 
-
-  
-    <article id="post-algorithms-10" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/22/algorithms-10/">贝尔曼福特算法</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/22/algorithms-10/" class="archive-article-date">
-  	<time datetime="2024-08-22T09:18:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了贝尔曼福特算法，并尝试用python实现<br>实现了输出地图上每个点到A点的最短距离，程序的用例来源于算法动画图解app</p>
-<p float="left">
-  <img src="../assets/img/Bellman1.jpg" width="30%" />
-  <img src="../assets/img/Bellman2.jpg" width="30%" />
-</p>
-
-<p>程序设计如下:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Graph</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,lines</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.nodes = &#123;&#125;</span><br><span class="line">        <span class="variable language_">self</span>.lines = []</span><br><span class="line">        <span class="variable language_">self</span>.flag = <span class="literal">True</span></span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">            *twonode,dis = line</span><br><span class="line">            <span class="variable language_">self</span>.lines.append([<span class="built_in">set</span>(twonode),dis])</span><br><span class="line">            <span class="keyword">for</span> node <span class="keyword">in</span> twonode:</span><br><span class="line">                <span class="variable language_">self</span>.nodes[node] = math.inf</span><br><span class="line">        <span class="variable language_">self</span>.nodes[<span class="string">&#x27;A&#x27;</span>] = <span class="number">0</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Initial node distances:&quot;</span>, <span class="built_in">dict</span>(<span class="variable language_">self</span>.nodes))</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Edges:&quot;</span>, <span class="variable language_">self</span>.lines)                 </span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_value</span>(<span class="params">self,node,line</span>):</span><br><span class="line">        other_node = (line[<span class="number">0</span>] - &#123;node&#125;).pop()</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>.nodes[other_node]</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">set_value</span>(<span class="params">self,node,val</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="variable language_">self</span>.nodes[node] &gt; val:</span><br><span class="line">            <span class="variable language_">self</span>.nodes[node] = val</span><br><span class="line">            <span class="variable language_">self</span>.flag = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_value</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">for</span> node <span class="keyword">in</span> <span class="variable language_">self</span>.nodes:</span><br><span class="line">            <span class="keyword">for</span> line <span class="keyword">in</span> <span class="variable language_">self</span>.lines:</span><br><span class="line">                <span class="keyword">if</span> node <span class="keyword">in</span> line[<span class="number">0</span>]:</span><br><span class="line">                    <span class="variable language_">self</span>.set_value(node,line[<span class="number">1</span>]+<span class="variable language_">self</span>.get_value(node,line))</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">solution</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">while</span> <span class="variable language_">self</span>.flag:</span><br><span class="line">            <span class="variable language_">self</span>.flag = <span class="literal">False</span></span><br><span class="line">            <span class="variable language_">self</span>.update_value()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Final node distances:&quot;</span>,<span class="variable language_">self</span>.nodes)</span><br><span class="line"></span><br><span class="line">linelist = [[<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="number">3</span>],</span><br><span class="line">            [<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="number">9</span>],</span><br><span class="line">            [<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;D&#x27;</span>,<span class="number">3</span>],</span><br><span class="line">            [<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="number">8</span>],</span><br><span class="line">            [<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;D&#x27;</span>,<span class="number">6</span>],</span><br><span class="line">            [<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="number">9</span>],</span><br><span class="line">            [<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;F&#x27;</span>,<span class="number">9</span>],</span><br><span class="line">            [<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;G&#x27;</span>,<span class="number">4</span>],</span><br><span class="line">            [<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;F&#x27;</span>,<span class="number">9</span>],</span><br><span class="line">            [<span class="string">&#x27;F&#x27;</span>,<span class="string">&#x27;G&#x27;</span>,<span class="number">5</span>],</span><br><span class="line">            [<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;G&#x27;</span>,<span class="number">8</span>]]</span><br><span class="line">gra = Graph(linelist)</span><br><span class="line">gra.solution()</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/22/algorithms-10/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-9" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/22/algorithms-9/">深度优先算法DFS</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/22/algorithms-9/" class="archive-article-date">
-  	<time datetime="2024-08-22T05:27:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了深度优先算法，在搜索开源程序时，发现可以用来解决迷宫问题（1为墙壁，0为路径，2为起点，3为终点，5为从起点到终点的路径）<br>这次的程序比上一个八数码问题简单，相对顺利。<br>写完后，与开源程序<a target="_blank" rel="noopener" href="https://github.com/ZQPei/Maze?tab=readme-ov-file">迷宫自动寻路</a>相比，同样存在很大差距。开源程序一共定义了三个对象——解决方法、迷宫、路径点，思路清晰，因为路径点也是对象，存储了可能的方向，使得发现死胡同回溯时，不必特意写函数找可以多方向行走的点（我设计的程序需要这个函数），直接一个一个点的往回退即可。还使用cv2实现了迷宫寻路的可视化。<br>我设计的程序如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> copy</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MazeDFS</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,maze</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.node = []</span><br><span class="line">        <span class="variable language_">self</span>.stack = []</span><br><span class="line">        <span class="variable language_">self</span>.path = []</span><br><span class="line">        <span class="variable language_">self</span>.stack.append([<span class="number">0</span>,<span class="number">0</span>])</span><br><span class="line">        <span class="variable language_">self</span>.maze = maze</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">Direction</span>(<span class="params">self,index</span>):</span><br><span class="line">        <span class="built_in">dir</span> = [[<span class="number">1</span>,<span class="number">0</span>],[<span class="number">0</span>,-<span class="number">1</span>],[<span class="number">0</span>,<span class="number">1</span>],[-<span class="number">1</span>,<span class="number">0</span>]]</span><br><span class="line">        flagtp = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> element <span class="keyword">in</span> <span class="built_in">dir</span>:</span><br><span class="line">            new_index = [index[<span class="number">0</span>]+element[<span class="number">0</span>],index[<span class="number">1</span>]+element[<span class="number">1</span>]]</span><br><span class="line">            <span class="keyword">if</span> new_index[<span class="number">0</span>]&gt;=<span class="number">0</span> <span class="keyword">and</span> new_index[<span class="number">1</span>]&gt;=<span class="number">0</span> <span class="keyword">and</span> new_index[<span class="number">0</span>] &lt; <span class="built_in">len</span>(<span class="variable language_">self</span>.maze) <span class="keyword">and</span> new_index[<span class="number">1</span>] &lt; <span class="built_in">len</span>(<span class="variable language_">self</span>.maze):</span><br><span class="line">                <span class="keyword">if</span> (new_index <span class="keyword">not</span> <span class="keyword">in</span> <span class="variable language_">self</span>.stack) <span class="keyword">and</span> (<span class="variable language_">self</span>.maze[new_index[<span class="number">0</span>]][new_index[<span class="number">1</span>]] == <span class="number">0</span>):</span><br><span class="line">                    <span class="variable language_">self</span>.stack.append(new_index)</span><br><span class="line">                    flagtp += <span class="number">1</span></span><br><span class="line">                <span class="keyword">elif</span> <span class="variable language_">self</span>.maze[new_index[<span class="number">0</span>]][new_index[<span class="number">1</span>]]==<span class="number">3</span>:</span><br><span class="line">                    <span class="variable language_">self</span>.path.append(new_index)</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">        <span class="keyword">if</span> flagtp == <span class="number">0</span>:</span><br><span class="line">            m = <span class="variable language_">self</span>.stack.index(<span class="variable language_">self</span>.node[-<span class="number">1</span>])</span><br><span class="line">            <span class="variable language_">self</span>.stack = <span class="variable language_">self</span>.stack[:m+<span class="number">1</span>]</span><br><span class="line">            m = <span class="variable language_">self</span>.path.index(<span class="variable language_">self</span>.stack[-<span class="number">2</span>])</span><br><span class="line">            <span class="variable language_">self</span>.path = <span class="variable language_">self</span>.path[:m+<span class="number">1</span>]</span><br><span class="line">            <span class="variable language_">self</span>.node.pop()</span><br><span class="line">        <span class="keyword">elif</span> flagtp != <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(flagtp-<span class="number">1</span>):</span><br><span class="line">                <span class="variable language_">self</span>.node.append(<span class="variable language_">self</span>.stack[-flagtp])</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">                </span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">Stackcon</span>(<span class="params">self</span>):</span><br><span class="line">        n = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">            ind = <span class="variable language_">self</span>.stack[-<span class="number">1</span>]</span><br><span class="line">            <span class="variable language_">self</span>.path.append(ind)</span><br><span class="line">            dirflag = <span class="variable language_">self</span>.Direction(ind)</span><br><span class="line">            n+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> dirflag:</span><br><span class="line">                <span class="variable language_">self</span>.Pathprint()</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">Pathprint</span>(<span class="params">self</span>):</span><br><span class="line">        maze_copy = copy.deepcopy(<span class="variable language_">self</span>.maze)</span><br><span class="line">        <span class="keyword">for</span> element <span class="keyword">in</span> <span class="variable language_">self</span>.path:</span><br><span class="line">            maze_copy[element[<span class="number">0</span>]][element[<span class="number">1</span>]] =<span class="number">5</span></span><br><span class="line">        <span class="keyword">for</span> row <span class="keyword">in</span> maze_copy:</span><br><span class="line">            <span class="built_in">print</span>(row)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">maze = [[<span class="number">2</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">        [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">3</span>]]</span><br><span class="line">mazedfs = MazeDFS(maze)</span><br><span class="line">mazedfs.Stackcon()</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/22/algorithms-9/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-8" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/21/algorithms-8/">广度优先算法BFS</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/21/algorithms-8/" class="archive-article-date">
-  	<time datetime="2024-08-21T02:57:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了广度优先算法，在搜索开源程序时，发现可以用来解决八数码问题<br>八数码问题就是通过移动空格与相邻的数字交换位置，使初始矩阵变为目标矩阵<br>广度优先搜索BFS以FIFO的方式进行，用它解决八数码问题，我认为需要解决一下问题：</p>
-<ul>
-<li>需要一个变量记录已经实现的矩阵</li>
-<li>需要一个变量记录候补顶点，使程序按照顺序进行搜索</li>
-<li>需要一个函数实现输入一个矩阵，输出移动一步可能实现的下一个矩阵</li>
-<li>需要一个字典变量实现记录子父节点，使程序能够打印正确的路径<br>我初步设计的程序如下，有很多可以改进的地方：</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> copy</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">GridBFS</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,start_state,goal_state</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.start = copy.deepcopy(start_state)</span><br><span class="line">        <span class="variable language_">self</span>.goal = copy.deepcopy(goal_state)</span><br><span class="line">        <span class="variable language_">self</span>.leaf = [copy.deepcopy(start_state)]</span><br><span class="line">        <span class="variable language_">self</span>.times = <span class="number">0</span></span><br><span class="line">        <span class="variable language_">self</span>.tree = <span class="number">0</span></span><br><span class="line">        <span class="variable language_">self</span>.<span class="built_in">map</span> = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">BFS</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">Find0po</span>(<span class="params">array</span>):</span><br><span class="line">            konposition = <span class="built_in">next</span>([i,row.index(<span class="number">0</span>)] <span class="keyword">for</span> i,row <span class="keyword">in</span> <span class="built_in">enumerate</span>(array) <span class="keyword">if</span> <span class="number">0</span> <span class="keyword">in</span> row)</span><br><span class="line">            <span class="keyword">return</span> konposition</span><br><span class="line">  </span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">printtree</span>():</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;成功的路径是：&quot;</span>)</span><br><span class="line">            n = []</span><br><span class="line">            <span class="keyword">while</span> <span class="variable language_">self</span>.tree != <span class="number">0</span>:</span><br><span class="line">                n.append(<span class="variable language_">self</span>.tree)</span><br><span class="line">                <span class="variable language_">self</span>.tree =  (<span class="variable language_">self</span>.tree-<span class="number">1</span>)//<span class="number">4</span></span><br><span class="line">            <span class="keyword">for</span> element <span class="keyword">in</span> <span class="variable language_">self</span>.start:</span><br><span class="line">                <span class="built_in">print</span>(element)</span><br><span class="line">            <span class="built_in">print</span>()</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> n[::-<span class="number">1</span>]:</span><br><span class="line">                <span class="keyword">for</span> element <span class="keyword">in</span> <span class="variable language_">self</span>.<span class="built_in">map</span>[i]:</span><br><span class="line">                    <span class="built_in">print</span>(element)</span><br><span class="line">                <span class="built_in">print</span>()</span><br><span class="line">  </span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">Moveout</span>(<span class="params">array</span>):</span><br><span class="line">            poko = Find0po(array)</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">4</span>):</span><br><span class="line">                <span class="variable language_">self</span>.times += <span class="number">1</span></span><br><span class="line">                <span class="variable language_">self</span>.tree += <span class="number">1</span></span><br><span class="line">                arrch = copy.deepcopy(array)</span><br><span class="line">                <span class="keyword">if</span> i == <span class="number">0</span> <span class="keyword">and</span> poko[<span class="number">0</span>]!= <span class="number">0</span>:    <span class="comment"># 上移</span></span><br><span class="line">                    arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]] = arrch[poko[<span class="number">0</span>]-<span class="number">1</span>][poko[<span class="number">1</span>]]</span><br><span class="line">                    arrch[poko[<span class="number">0</span>]-<span class="number">1</span>][poko[<span class="number">1</span>]] = <span class="number">0</span></span><br><span class="line">                <span class="keyword">elif</span> i == <span class="number">1</span> <span class="keyword">and</span> poko[<span class="number">0</span>]!= <span class="number">2</span>:   <span class="comment"># 下移</span></span><br><span class="line">                    arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]] = arrch[poko[<span class="number">0</span>]+<span class="number">1</span>][poko[<span class="number">1</span>]]</span><br><span class="line">                    arrch[poko[<span class="number">0</span>]+<span class="number">1</span>][poko[<span class="number">1</span>]] = <span class="number">0</span></span><br><span class="line">                <span class="keyword">elif</span> i == <span class="number">2</span> <span class="keyword">and</span> poko[<span class="number">1</span>]!= <span class="number">2</span>:   <span class="comment"># 右移</span></span><br><span class="line">                    arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]] = arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]+<span class="number">1</span>]</span><br><span class="line">                    arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]+<span class="number">1</span>] = <span class="number">0</span></span><br><span class="line">                <span class="keyword">elif</span> i == <span class="number">3</span> <span class="keyword">and</span> poko[<span class="number">1</span>]!= <span class="number">0</span>:   <span class="comment"># 左移</span></span><br><span class="line">                    arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]] = arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]-<span class="number">1</span>]</span><br><span class="line">                    arrch[poko[<span class="number">0</span>]][poko[<span class="number">1</span>]-<span class="number">1</span>] = <span class="number">0</span>  </span><br><span class="line">                <span class="keyword">if</span> arrch <span class="keyword">not</span> <span class="keyword">in</span> <span class="variable language_">self</span>.leaf:</span><br><span class="line">                    <span class="variable language_">self</span>.leaf.append(arrch)</span><br><span class="line">                    <span class="variable language_">self</span>.<span class="built_in">map</span>[<span class="variable language_">self</span>.tree] = arrch</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">f&quot;第<span class="subst">&#123;self.times&#125;</span>次，得到<span class="subst">&#123;arrch&#125;</span>&quot;</span>)</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="variable language_">self</span>.times-=<span class="number">1</span></span><br><span class="line">                <span class="keyword">if</span> arrch == <span class="variable language_">self</span>.goal:</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">&quot;成功发现&quot;</span>)</span><br><span class="line">                    printtree()</span><br><span class="line">                    <span class="variable language_">self</span>.times=<span class="number">1000</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> element <span class="keyword">in</span> <span class="variable language_">self</span>.leaf:</span><br><span class="line">            Moveout(element)</span><br><span class="line">            <span class="keyword">if</span> <span class="variable language_">self</span>.times == <span class="number">1000</span>:</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    start_state = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>],</span><br><span class="line">                   [<span class="number">4</span>, <span class="number">0</span>, <span class="number">6</span>],</span><br><span class="line">                   [<span class="number">7</span>, <span class="number">5</span>, <span class="number">8</span>]]</span><br><span class="line">    goal_state = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>],</span><br><span class="line">                  [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>],</span><br><span class="line">                  [<span class="number">7</span>, <span class="number">8</span>, <span class="number">0</span>]]</span><br><span class="line">    gridbfs = GridBFS(start_state,goal_state)</span><br><span class="line">    gridbfs.BFS()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>程序实现的过程如下图所示：<br><img src="/../assets/img/BFS8.png" alt="BFS8"><br>图片中标识了每个矩阵依次生成的顺序以及正确生成的路径<br>编写的程序中，可以改进的地方有：</p>
-<ul>
-<li>实现过的矩阵的记录可以使用集合，但集合不能存储数组，因为它不可哈希，需要将二维数组转换为元组，可以使用map函数，<code>arrch_tuple = tuple(map(tuple, arrch)) </code></li>
-<li>移动的实现写的较为繁琐，上移、下移、左移、右移分别罗列了一个if语句并使用了for循环，可以换一种方法编写：</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">directions = [(<span class="number">0</span>, -<span class="number">1</span>), (<span class="number">0</span>, <span class="number">1</span>), (-<span class="number">1</span>, <span class="number">0</span>), (<span class="number">1</span>, <span class="number">0</span>)]  <span class="comment"># 左、右、上、下</span></span><br><span class="line">            <span class="keyword">for</span> direction <span class="keyword">in</span> directions:</span><br><span class="line">                new_row, new_col = poko[<span class="number">0</span>] + direction[<span class="number">0</span>], poko[<span class="number">1</span>] + direction[<span class="number">1</span>]</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>父子节点在字典中记录时，键使用数字记录，并使用数学关系在打印向前递推，这可能较为难懂，并且不易维护，容易出错，建议使用父节点作为子节点的值，关键代码记录如下：</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始键值对</span></span><br><span class="line"><span class="variable language_">self</span>.parent_map = &#123;&#125;  <span class="comment"># 记录每个状态的父状态</span></span><br><span class="line"><span class="variable language_">self</span>.parent_map[<span class="variable language_">self</span>.start] = <span class="literal">None</span>  <span class="comment"># 最开始的键值对的</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 一般的键值对</span></span><br><span class="line"><span class="variable language_">self</span>.parent_map[arrch_tuple] = array  <span class="comment"># 记录父状态</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 打印正确路径</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">print_path</span>(<span class="params">self, state</span>):</span><br><span class="line">        path = []</span><br><span class="line">        <span class="keyword">while</span> state <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:  <span class="comment"># 当读取到值为None时，回溯完毕</span></span><br><span class="line">            path.append(state)</span><br><span class="line">            state = <span class="variable language_">self</span>.parent_map.get(state)</span><br><span class="line">        path.reverse()  <span class="comment"># 反转路径</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;解决路径：&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> step <span class="keyword">in</span> path:</span><br><span class="line">            <span class="keyword">for</span> row <span class="keyword">in</span> step:</span><br><span class="line">                <span class="built_in">print</span>(row)</span><br><span class="line">            <span class="built_in">print</span>()  <span class="comment"># 空行分隔不同的状态</span></span><br></pre></td></tr></table></figure>
-
-<p>在博客园找到了同样使用BFS解决八数码的文章代码，他是使用了类中的一个属性 (pre) 来记录每个状态的前一个状态，从而可以追踪每一步是如何到达当前状态的，而没使用字典，也很巧妙。文章中的代码还有八数码的问题是否可解的判断函数，更为完整，推介阅读<a target="_blank" rel="noopener" href="https://www.cnblogs.com/roadwide/p/12890295.html">人工智能结课作业-DFS&#x2F;BFS&#x2F;Astar解决八数码问题</a>。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/21/algorithms-8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-7" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/20/algorithms-7/">查找</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/20/algorithms-7/" class="archive-article-date">
-  	<time datetime="2024-08-20T02:45:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了两种查找方法——线性查找和二分查找，都比较简单，同样尝试用python实现<br>线性查找的程序设计如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现线性查找的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Linefind</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">linefind1</span>(<span class="params">self,num</span>):</span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        index = <span class="literal">None</span></span><br><span class="line">        n = <span class="built_in">len</span>(array)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            <span class="keyword">if</span> array[i]==num:</span><br><span class="line">                <span class="keyword">return</span> i</span><br><span class="line">        <span class="keyword">return</span> index</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    linefind =  Linefind(testlist)</span><br><span class="line">    num = <span class="number">9</span></span><br><span class="line">    a = linefind.linefind1(num)</span><br><span class="line">    <span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
-
-<p>二分查找的程序设计如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现二分查找的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Binaryfind</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">binaryfind</span>(<span class="params">self,num</span>):</span><br><span class="line">        index = <span class="literal">None</span></span><br><span class="line">        array = <span class="variable language_">self</span>.array</span><br><span class="line">        end = <span class="built_in">len</span>(array)</span><br><span class="line">        start = <span class="number">0</span></span><br><span class="line">        mid = end//<span class="number">2</span></span><br><span class="line">        times = math.ceil(math.log2(end))</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(times):</span><br><span class="line">            <span class="keyword">if</span> testlist[mid] == num:</span><br><span class="line">                <span class="keyword">return</span> mid</span><br><span class="line">            <span class="keyword">elif</span> testlist[mid] &gt; num:</span><br><span class="line">                end = mid</span><br><span class="line">                mid = (start+mid)//<span class="number">2</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                start = mid</span><br><span class="line">                mid = (end+mid)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">return</span> index</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    testlist = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">12</span>, <span class="number">35</span>]</span><br><span class="line">    num = <span class="number">5</span></span><br><span class="line">    binary = Binaryfind(testlist)</span><br><span class="line">    a = binary.binaryfind(num)</span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/20/algorithms-7/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/19/algorithms-6/">快速排序</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/19/algorithms-6/" class="archive-article-date">
-  	<time datetime="2024-08-19T11:57:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了快速排序算法，并尝试使用python实现算法<br>这次算法的程序需要使用递归来实现，而我在学习归并排序算法时初步接触过递归的函数怎么编写，虽然不太顺利，但终于还是成功了<br>本次程序和github上<a target="_blank" rel="noopener" href="https://github.com/Vay-keen/Seven-sorting-methods/blob/master/quick_sort.py">快速排序</a>开源代码的递归的调用基本一致，但排序部分的程序不如它的巧妙和简明，但可能对于我来说，我的程序更好理解一些<br>我的程序设计如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现快速排序的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Quicksort</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">quicksort1</span>(<span class="params">self,array,start,end</span>):</span><br><span class="line">        left_index = start</span><br><span class="line">        right_index = end-<span class="number">1</span></span><br><span class="line">        pivot = end</span><br><span class="line">        <span class="keyword">while</span> right_index &gt;= left_index:</span><br><span class="line">            <span class="keyword">if</span> array[left_index] &lt; array[pivot]:  </span><br><span class="line">                left_index += <span class="number">1</span></span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            <span class="keyword">if</span> array[right_index]&lt;array[pivot]:</span><br><span class="line">                array[right_index],array[left_index] = array[left_index],array[right_index]</span><br><span class="line">                right_index -=<span class="number">1</span></span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            right_index -=<span class="number">1</span></span><br><span class="line">        array[pivot],array[right_index+<span class="number">1</span>] = array[right_index+<span class="number">1</span>],array[pivot]</span><br><span class="line">        <span class="keyword">return</span> right_index</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">quicksplit</span>(<span class="params">self,start,end</span>):</span><br><span class="line">        <span class="keyword">if</span> start&lt;end:</span><br><span class="line">            pivot_flag = <span class="variable language_">self</span>.quicksort1(<span class="variable language_">self</span>.array,start,end)</span><br><span class="line">            <span class="variable language_">self</span>.quicksplit(start,pivot_flag)</span><br><span class="line">            <span class="variable language_">self</span>.quicksplit(pivot_flag+<span class="number">2</span>,end)</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">quickstart</span>(<span class="params">self</span>):</span><br><span class="line">        start = <span class="number">0</span></span><br><span class="line">        end = <span class="built_in">len</span>(<span class="variable language_">self</span>.array)-<span class="number">1</span></span><br><span class="line">        <span class="variable language_">self</span>.quicksplit(start,end)</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">self</span>.array</span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    quicksort  = Quicksort(testlist)</span><br><span class="line">    sortlist = quicksort.quickstart()</span><br><span class="line">    <span class="built_in">print</span>(sortlist) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/19/algorithms-6/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/19/algorithms-5/">归并排序</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/19/algorithms-5/" class="archive-article-date">
-  	<time datetime="2024-08-19T03:52:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了归并排序算法，并尝试使用python实现算法<br>先自己尝试写了python程序，发现了一个以前不注意的问题，python的运算符号 ‘&#x2F;‘ 执行的是浮点除法，故不能用 ‘&#x2F;‘ 计算数组的索引<br>对数组进行排序的函数，我和github上<a target="_blank" rel="noopener" href="https://github.com/Vay-keen/Seven-sorting-methods/blob/master/merge_sort.py">归并排序</a>开源代码的思路基本一致，都是将一个数组以中部为界，用两个指针进行排序。<br>但将整个数组进行拆解的方法不同，我是从底部往上进行拆解，吸取了堆排序的经验。但这次依旧不如开源的代码巧妙。开源代码采用了递归实现排序。<br>开源代码递归部分摘录与分析：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#将大的问题分解为小的问题，将小的问题解决后合并得到结果</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">merge_sort</span>(<span class="params">array, start, end</span>):</span><br><span class="line">	<span class="keyword">if</span> start&lt;end:   <span class="comment">#基准条件：防止一直递归下去</span></span><br><span class="line">		mid=(start+end)//<span class="number">2</span>  </span><br><span class="line">		merge_sort(array, start, mid)   <span class="comment">#递归调用</span></span><br><span class="line">		merge_sort(array, mid+<span class="number">1</span>, end)</span><br><span class="line">		merge_array(array, start, mid, end)</span><br></pre></td></tr></table></figure>
-<p>我的程序设计如下：（未使用递归）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现归并排序的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Mergesort</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">merge1</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">two_merge</span>(<span class="params">merarr,merlen</span>):</span><br><span class="line">            frmer = merarr[<span class="number">0</span>:merlen]</span><br><span class="line">            bemer = merarr[merlen:]</span><br><span class="line">            frmer_index = <span class="number">0</span></span><br><span class="line">            bemer_index = <span class="number">0</span></span><br><span class="line">            sortarr = []</span><br><span class="line">            <span class="keyword">while</span> frmer_index &lt; <span class="built_in">len</span>(frmer) <span class="keyword">and</span> bemer_index &lt; <span class="built_in">len</span>(bemer):</span><br><span class="line">                <span class="keyword">if</span> frmer[frmer_index] &lt; bemer[bemer_index]:</span><br><span class="line">                    sortarr.append(frmer[frmer_index])</span><br><span class="line">                    frmer_index += <span class="number">1</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    sortarr.append(bemer[bemer_index])</span><br><span class="line">                    bemer_index += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> frmer_index &lt; <span class="built_in">len</span>(frmer):</span><br><span class="line">                <span class="keyword">return</span> sortarr+frmer[frmer_index:]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> sortarr+bemer[bemer_index:]</span><br><span class="line">        </span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        n = <span class="built_in">len</span>(array)</span><br><span class="line">        m = math.ceil(math.log2(n+<span class="number">1</span>))</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">1</span>+m):</span><br><span class="line">            o = <span class="number">0</span></span><br><span class="line">            <span class="keyword">while</span> o&lt;n:</span><br><span class="line">                <span class="keyword">if</span> o+<span class="number">2</span>**i &lt; n:</span><br><span class="line">                    array[o:o+<span class="number">2</span>**i] = two_merge(array[o:o+<span class="number">2</span>**i],<span class="number">2</span>**(i-<span class="number">1</span>))</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    array[o:] = two_merge(array[o:],<span class="number">2</span>**(i-<span class="number">1</span>))</span><br><span class="line">                o += <span class="number">2</span>**i</span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    merge = Mergesort(testlist)</span><br><span class="line">    sortlist = merge.merge1()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/19/algorithms-5/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/18/algorithms-4/">堆排序</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/18/algorithms-4/" class="archive-article-date">
-  	<time datetime="2024-08-18T12:31:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了堆排序算法，并尝试使用python实现算法<br>因为之前并未学过在数组中使用堆结构，故程序设计较为不简洁<del>（智障）</del><br>建立堆的方法为从上向下进行，一旦发现交换发生，就重新建立堆QAQ</p>
-<p>程序设计完成后，阅读了github上的<a target="_blank" rel="noopener" href="https://github.com/Vay-keen/Seven-sorting-methods/blob/master/heap_sort.py">堆排序</a>开源程序，主要有以下启发：</p>
-<ul>
-<li>调整堆中元素的过程称为“堆化”。插入元素时向上堆化，删除元素时向下堆化。一般从无序数组构建堆时，建议从下往上进行，即从下面的父节点进行。<del>而我的程序进行了相反的操作……</del></li>
-<li>我和开源程序定义的函数作用也不同，我的函数是输入数组，然后输出符合堆规则的数组，即不管什么样的数组，都视为无序数组。开源程序则是输入了数组和需要调整的父节点索引值，针对那一个父节点进行调整，更为<strong>高效灵活</strong>。</li>
-<li>另外将堆具有的一些数学性质整理为表格：</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">符号</th>
-<th align="center">含义</th>
-<th align="center">值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">n</td>
-<td align="center">元素个数</td>
-<td align="center">n</td>
-</tr>
-<tr>
-<td align="center">h</td>
-<td align="center">高度</td>
-<td align="center">[log2(n)] (向下取整)</td>
-</tr>
-<tr>
-<td align="center">parent</td>
-<td align="center">父节点索引</td>
-<td align="center">i</td>
-</tr>
-<tr>
-<td align="center">child</td>
-<td align="center">子节点索引</td>
-<td align="center">2i+1(左)<br />2i+2(右)</td>
-</tr>
-<tr>
-<td align="center">parent_nodes</td>
-<td align="center">父节点个数</td>
-<td align="center">[n&#x2F;2] (向下取整)</td>
-</tr>
-<tr>
-<td align="center">leaf_nodes</td>
-<td align="center">叶子节点个数</td>
-<td align="center">n-[n&#x2F;2] (向下取整)</td>
-</tr>
-</tbody></table>
-<p>我的程序设计如下（有很大的进步空间）：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现堆排序的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Heapsort</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">heap1</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">Heap_build</span>(<span class="params">array</span>):</span><br><span class="line">            <span class="comment">#计算相关参数</span></span><br><span class="line">            n = <span class="built_in">len</span>(array)   <span class="comment"># 数列长度</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                m = math.floor(math.log2(n))   <span class="comment"># 层数-1</span></span><br><span class="line">            <span class="keyword">except</span> ValueError:</span><br><span class="line">                m = <span class="number">0</span>       </span><br><span class="line">            o = <span class="number">2</span>**m-<span class="number">1</span>    <span class="comment"># 可能拥有子节点的父节点数目（不一定拥有）</span></span><br><span class="line">            swap_flag = <span class="number">1</span>     <span class="comment"># 标记是否发生交换</span></span><br><span class="line">            <span class="keyword">while</span> swap_flag:</span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(o):</span><br><span class="line">                    <span class="keyword">if</span> <span class="number">2</span>*i+<span class="number">2</span> &lt; n:</span><br><span class="line">                        <span class="keyword">if</span> array[<span class="number">2</span>*i+<span class="number">1</span>]&gt;array[i] <span class="keyword">or</span> array[<span class="number">2</span>*i+<span class="number">2</span>]&gt;array[i]:</span><br><span class="line">                            <span class="keyword">if</span> array[<span class="number">2</span>*i+<span class="number">1</span>]&gt;array[<span class="number">2</span>*i+<span class="number">2</span>]:</span><br><span class="line">                                array[i],array[<span class="number">2</span>*i+<span class="number">1</span>] = array[<span class="number">2</span>*i+<span class="number">1</span>],array[i]</span><br><span class="line">                                <span class="keyword">break</span></span><br><span class="line">                            <span class="keyword">else</span>:</span><br><span class="line">                                array[i],array[<span class="number">2</span>*i+<span class="number">2</span>] = array[<span class="number">2</span>*i+<span class="number">2</span>],array[i]</span><br><span class="line">                                <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">elif</span> <span class="number">2</span>*i+<span class="number">1</span> &lt; n:</span><br><span class="line">                        <span class="keyword">if</span> array[<span class="number">2</span>*i+<span class="number">1</span>]&gt;array[i]:</span><br><span class="line">                            array[i],array[<span class="number">2</span>*i+<span class="number">1</span>] = array[<span class="number">2</span>*i+<span class="number">1</span>],array[i]</span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    swap_flag = <span class="number">0</span></span><br><span class="line">            <span class="keyword">return</span> array</span><br><span class="line">        </span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        <span class="comment"># 计算相关参数</span></span><br><span class="line">        n = <span class="built_in">len</span>(array)   <span class="comment"># 数列长度</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 建立堆</span></span><br><span class="line">        array = Heap_build(array)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 从堆中取出最大数，并更新堆</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            array[<span class="number">0</span>],array[-<span class="number">1</span>-i] = array[-<span class="number">1</span>-i],array[<span class="number">0</span>]</span><br><span class="line">            array[<span class="number">0</span>:-<span class="number">1</span>-i] = Heap_build(array[<span class="number">0</span>:-<span class="number">1</span>-i])</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    heap = Heapsort(testlist)</span><br><span class="line">    sortlist = heap.heap1()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/18/algorithms-4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/18/algorithms-3/">插入排序</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/18/algorithms-3/" class="archive-article-date">
-  	<time datetime="2024-08-18T06:36:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了插入排序算法，并尝试使用python实现算法<br>自主编程后，对照了github上的<a target="_blank" rel="noopener" href="https://github.com/Vay-keen/Seven-sorting-methods/blob/master/insert_sort.py">插入排序</a>程序，其使用循环完成的操作，我使用切片完成<br>程序如下所示：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现插入排序的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Insertsort</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">insert1</span>(<span class="params">self</span>):</span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        n = <span class="built_in">len</span>(array)</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i):</span><br><span class="line">                <span class="keyword">if</span> array[i]&lt;array[j+<span class="number">1</span>] <span class="keyword">and</span> array[i]&gt;=array[j]:</span><br><span class="line">                    array[j+<span class="number">1</span>],array[j+<span class="number">2</span>:i+<span class="number">1</span>]=array[i],array[j+<span class="number">1</span>:i]</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">elif</span> array[i]&lt;=array[<span class="number">0</span>]:</span><br><span class="line">                    array[<span class="number">0</span>],array[<span class="number">1</span>:i+<span class="number">1</span>]=array[i],array[<span class="number">0</span>:i]</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    insert = Insertsort(testlist)</span><br><span class="line">    sortlist = insert.insert1()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/18/algorithms-3/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-algorithms-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2024/08/17/algorithms-2/">选择排序</a>
-    </h1>
-  
-
-        
-        <a href="/2024/08/17/algorithms-2/" class="archive-article-date">
-  	<time datetime="2024-08-17T09:22:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学习了选择排序算法，并尝试使用python实现算法<br>参考了github上的开源代码：<a target="_blank" rel="noopener" href="https://github.com/Vay-keen/Seven-sorting-methods/blob/master/select_sort.py">选择排序</a>，加深了对python的简洁的数据交换操作的记忆<br>程序如下所示：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现选择排序的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Selectsort</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">select</span>(<span class="params">self</span>):</span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        n = <span class="built_in">len</span>(array)</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            temp_index = j</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(j,n):</span><br><span class="line">                <span class="keyword">if</span> array[i]&lt;array[temp_index]:</span><br><span class="line">                    temp_index = i</span><br><span class="line">            array[j], array[temp_index]= array[temp_index],array[j]</span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    select1 = Selectsort(testlist)</span><br><span class="line">    sortlist = select1.select()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2024/08/17/algorithms-2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -1001,8 +321,8 @@ var _hmt = _hmt || [];
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
