@@ -142,6 +142,126 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-algorithms-4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/08/18/algorithms-4/">堆排序</a>
+    </h1>
+  
+
+        
+        <a href="/2024/08/18/algorithms-4/" class="archive-article-date">
+  	<time datetime="2024-08-18T12:31:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>学习了堆排序算法，并尝试使用python实现算法<br>因为之前并未学过在数组中使用堆结构，故程序设计较为不简洁<del>（智障）</del><br>建立堆的方法为从上向下进行，一旦发现交换发生，就重新建立堆QAQ</p>
+<p>程序设计完成后，阅读了github上的<a target="_blank" rel="noopener" href="https://github.com/Vay-keen/Seven-sorting-methods/blob/master/heap_sort.py">堆排序</a>开源程序，主要有以下启发：</p>
+<ul>
+<li>调整堆中元素的过程称为“堆化”。插入元素时向上堆化，删除元素时向下堆化。一般从无序数组构建堆时，建议从下往上进行，即从下面的父节点进行。<del>而我的程序进行了相反的操作……</del></li>
+<li>我和开源程序定义的函数作用也不同，我的函数是输入数组，然后输出符合堆规则的数组，即不管什么样的数组，都视为无序数组。开源程序则是输入了数组和需要调整的父节点索引值，针对那一个父节点进行调整，更为<strong>高效灵活</strong>。</li>
+<li>另外将堆具有的一些数学性质整理为表格：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">含义</th>
+<th align="center">值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">n</td>
+<td align="center">元素个数</td>
+<td align="center">n</td>
+</tr>
+<tr>
+<td align="center">h</td>
+<td align="center">高度</td>
+<td align="center">[log2(n)] (向下取整)</td>
+</tr>
+<tr>
+<td align="center">parent</td>
+<td align="center">父节点索引</td>
+<td align="center">i</td>
+</tr>
+<tr>
+<td align="center">child</td>
+<td align="center">子节点索引</td>
+<td align="center">2i+1(左)<br />2i+2(右)</td>
+</tr>
+<tr>
+<td align="center">parent_nodes</td>
+<td align="center">父节点个数</td>
+<td align="center">[n&#x2F;2] (向下取整)</td>
+</tr>
+<tr>
+<td align="center">leaf_nodes</td>
+<td align="center">叶子节点个数</td>
+<td align="center">n-[n&#x2F;2] (向下取整)</td>
+</tr>
+</tbody></table>
+<p>我的程序设计如下（有很大的进步空间）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">实现堆排序的一种方法</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Heapsort</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,arr</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        <span class="variable language_">self</span>.array = arr[:]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">heap1</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">Heap_build</span>(<span class="params">array</span>):</span><br><span class="line">            <span class="comment">#计算相关参数</span></span><br><span class="line">            n = <span class="built_in">len</span>(array)   <span class="comment"># 数列长度</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                m = math.floor(math.log2(n))   <span class="comment"># 层数-1</span></span><br><span class="line">            <span class="keyword">except</span> ValueError:</span><br><span class="line">                m = <span class="number">0</span>       </span><br><span class="line">            o = <span class="number">2</span>**m-<span class="number">1</span>    <span class="comment"># 可能拥有子节点的父节点数目（不一定拥有）</span></span><br><span class="line">            swap_flag = <span class="number">1</span>     <span class="comment"># 标记是否发生交换</span></span><br><span class="line">            <span class="keyword">while</span> swap_flag:</span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(o):</span><br><span class="line">                    <span class="keyword">if</span> <span class="number">2</span>*i+<span class="number">2</span> &lt; n:</span><br><span class="line">                        <span class="keyword">if</span> array[<span class="number">2</span>*i+<span class="number">1</span>]&gt;array[i] <span class="keyword">or</span> array[<span class="number">2</span>*i+<span class="number">2</span>]&gt;array[i]:</span><br><span class="line">                            <span class="keyword">if</span> array[<span class="number">2</span>*i+<span class="number">1</span>]&gt;array[<span class="number">2</span>*i+<span class="number">2</span>]:</span><br><span class="line">                                array[i],array[<span class="number">2</span>*i+<span class="number">1</span>] = array[<span class="number">2</span>*i+<span class="number">1</span>],array[i]</span><br><span class="line">                                <span class="keyword">break</span></span><br><span class="line">                            <span class="keyword">else</span>:</span><br><span class="line">                                array[i],array[<span class="number">2</span>*i+<span class="number">2</span>] = array[<span class="number">2</span>*i+<span class="number">2</span>],array[i]</span><br><span class="line">                                <span class="keyword">break</span></span><br><span class="line">                    <span class="keyword">elif</span> <span class="number">2</span>*i+<span class="number">1</span> &lt; n:</span><br><span class="line">                        <span class="keyword">if</span> array[<span class="number">2</span>*i+<span class="number">1</span>]&gt;array[i]:</span><br><span class="line">                            array[i],array[<span class="number">2</span>*i+<span class="number">1</span>] = array[<span class="number">2</span>*i+<span class="number">1</span>],array[i]</span><br><span class="line">                            <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    swap_flag = <span class="number">0</span></span><br><span class="line">            <span class="keyword">return</span> array</span><br><span class="line">        </span><br><span class="line">        array = <span class="variable language_">self</span>.array[:]</span><br><span class="line">        <span class="comment"># 计算相关参数</span></span><br><span class="line">        n = <span class="built_in">len</span>(array)   <span class="comment"># 数列长度</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 建立堆</span></span><br><span class="line">        array = Heap_build(array)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 从堆中取出最大数，并更新堆</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            array[<span class="number">0</span>],array[-<span class="number">1</span>-i] = array[-<span class="number">1</span>-i],array[<span class="number">0</span>]</span><br><span class="line">            array[<span class="number">0</span>:-<span class="number">1</span>-i] = Heap_build(array[<span class="number">0</span>:-<span class="number">1</span>-i])</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> array</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    testlist=[<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">0</span>,<span class="number">12</span>,<span class="number">35</span>,<span class="number">7</span>]</span><br><span class="line">    heap = Heapsort(testlist)</span><br><span class="line">    sortlist = heap.heap1()</span><br><span class="line">    <span class="built_in">print</span>(sortlist)</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">我的第一本算法书</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/08/18/algorithms-4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-algorithms-3" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
